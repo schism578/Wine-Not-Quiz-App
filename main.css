@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: antiquewhite;
+    text-align: center;
+    font-family: Courgette;
+    background: url(Quiz-App-Photos/Background.jpeg)center center no-repeat fixed;
+    background-size: cover;
+}
+
+.header, h1 {
+    background: rgba(0,0,0,0);
+    padding: 10px;
+}
+
+.quiz-block {
+    margin: auto;
+    width: 80%;
+    height: 85vh;
+    padding: 1em;
+    background-color: darkred;
+    border: 2px lightgray solid;
+}
+
+.scores-questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 95%;
+    max-height: 5vh;
+    font-size: 20px;
+}
+
+.initImage {
+    max-width: 30vw;
+    margin-bottom: 2em;
+}
+
+.correct, .wrong {
+    max-width: 40vw;
+    margin-bottom: 1em;
+}
+
+.finished, .perfect {
+    max-width: 40vw;
+    margin-bottom: 20px;
+}
+
+.quiz-form, .feedback, .question, p, fieldset, label, legend {
+    display: block;
+    border: none;
+    padding: 5px 2px;
+    margin: auto;
+    max-width: 95%;
+    font-size: 20px;
+}
+
+.quiz-form {
+    width: 80%;
+    height: 85%;
+}
+
+.feedback {
+    padding: 0.6em;
+}
+
+ol {
+    list-style-type: lower-alpha;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.end-message {
+    margin-bottom: 20px;
+}
+
+p, label, .question, .feedback {
+    margin: auto;
+    max-width: 95%;
+    font-size: 20px;
+}
+
+h2 {
+    margin: 30px auto;
+    background: rgba(145,140,140,0);
+}
+
+button {
+    display: block;
+    margin: 4px auto;
+    height: 3em;
+    width: 7em;
+    border: 1px black solid;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+}
+
+button:hover,
+button:active {
+    background-color: darkslategray;
+    color: cornsilk;
+
+}
+
+@media screen and (min-width: 768px) {
+
+.initImage {
+    max-width: 20vw;
+    margin-bottom: 1.5em;
+}
+
+.correct, .wrong {
+    max-width: 30vw;
+    margin-bottom: 0em;
+}
+
+.finished, .perfect {
+    max-width: 30vw;
+    margin-bottom: 10px;
+}
+
+p, label, .question, .feedback {
+    max-width: 60vw;
+}
+
+.scores-questions {
+  max-height: 3vh;
+}
+
+ol, .question, .feedback {
+  padding: 15px;
+}
+
+.question {
+  max-height: 4vh;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.quiz-block {
+    max-width: 60vw;
+    max-height: 90vh;
+}
+
+.scores-questions {
+    max-width: 95%;
+    max-height: 5vh;
+    margin: 20px;
+}
+
+.question {
+  max-height: 5vh;
+  padding: 20px;
+}
+
+.answer-list {
+  max-width: 30vw;
+  max-height: 75vh;
+  padding: 10px;
+}
+
+.wrong, .finished {
+  max-width: 20vw;
+}
+
+}
