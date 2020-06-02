@@ -33,7 +33,7 @@ body {
     list-style: none;
     max-width: 95%;
     max-height: 5vh;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .initImage {
@@ -132,6 +132,7 @@ p, label, .question, .feedback {
 
 .scores-questions {
   max-height: 3vh;
+  font-size: 20px;
 }
 
 ol, .question, .feedback {

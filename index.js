@@ -212,16 +212,16 @@ function endScore() {
     if (calculateScore() === questionCount()) {
         return `
         <p class="end-message">Perfect Score!<span class="score-out-of">  Score: ${calculateScore()}/${questionCount()}</span></p>
-        <img src="Quiz-App-Photos/PerfectScore.jpeg" alt="wine being poured into decanter" class="perfect"></img>
+        <img src="Quiz-App-Photos/PerfectScore.jpeg" alt="wine being poured into decanter" class="perfect">
         <p class="end-message">One of the finest from my collection...</p>
-        <button type="end" class="start-over-button">Start Over</button>
+        <button type="button" class="start-over-button">Start Over</button>
         `
     } else {
         return `
         <p class="end-message">You Finished!<span class="score-out-of">  Score: ${calculateScore()}/${questionCount()}</span></p>
-        <img src="Quiz-App-Photos/PaulaDeen.jpeg" alt="Paula Deen riding a stick of butter with a glass of wine" class="finished"></img>
+        <img src="Quiz-App-Photos/PaulaDeen.jpeg" alt="Paula Deen riding a stick of butter with a glass of wine" class="finished">
         <p class="end-message">Cheers!</p>
-        <button type="end" class="start-over-button">Start Over</button>
+        <button type="button" class="start-over-button">Start Over</button>
         `
     }
 }
@@ -230,7 +230,7 @@ function generateStartPage() {
     return `
             <p class="intro-question">How much do you know about the world of wine?</p>
                 <h2 class="press-start">Press Start!</h2>
-                <img src="Quiz-App-Photos/InitializeQuiz.jpeg" alt="champagne bottle pop" class="initImage"></img>
+                <img src="Quiz-App-Photos/InitializeQuiz.jpeg" alt="champagne bottle pop" class="initImage">
                 <button type="button" class="start-button">Start</button>
         `
 }
@@ -267,9 +267,9 @@ function generateQuestionPage() {
 
 function generateFeedbackPage(question, answer) {
     const message = answer.isCorrect ? `<p class="feedback">You're right!</p>
-                                        <img src="Quiz-App-Photos/Correct.jpeg" alt="wine glass cheers" class="correct"></img>` 
+                                        <img src="Quiz-App-Photos/Correct.jpeg" alt="wine glass cheers" class="correct">` 
                                         : `<p class="feedback">Sorry, the answer is: ${question.answers.find(answer => answer.isCorrect).text}.</p> 
-                                        <img src="Quiz-App-Photos/Wrong.jpeg" alt="wine bottle smashed on head" class="wrong"></img>`
+                                        <img src="Quiz-App-Photos/Wrong.jpeg" alt="wine bottle smashed on head" class="wrong">`
     return `
         <ul class="scores-questions">
             <li><span>Score: ${calculateScore()}/${questionCount()}</span></li>
