@@ -63,6 +63,7 @@ body {
 .quiz-form {
     width: 80%;
     height: 85%;
+    vertical-align: middle;
 }
 
 .feedback {
