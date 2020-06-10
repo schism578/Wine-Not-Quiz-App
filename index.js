@@ -241,7 +241,7 @@ function generateQuestionPage() {
                 <ol>
                     ${question.answers.map((answer, index) => `
                         <li class="answer-list"><label for="answer${index}">
-                        <input type="radio" id="answer${index}" name="answer" value="${index}">
+                        <input type="radio" id="answer${index}" name="answer" value="${index}" required>
                         ${answer.text}
                         </label></li>
                     `)
