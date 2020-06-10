@@ -67,6 +67,7 @@ fieldset {
 .quiz-form {
     width: 80%;
     height: 85%;
+    padding: 10px;
 }
 
 .feedback {
@@ -76,7 +77,7 @@ fieldset {
 ol {
     list-style-type: lower-alpha;
     margin: 0 auto;
-    padding: 5px;
+    padding: 15px;
     text-align: left;
 }
 
