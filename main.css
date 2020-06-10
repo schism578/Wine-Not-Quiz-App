@@ -75,7 +75,7 @@ ol {
     flex-direction: column;
     justify-content: space-between;
     list-style-type: lower-alpha;
-    margin: 0 auto;
+    margin: auto;
     text-align: left;
 }
 
