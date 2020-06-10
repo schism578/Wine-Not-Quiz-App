@@ -71,9 +71,11 @@ body {
 }
 
 ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     list-style-type: lower-alpha;
     margin: 0 auto;
-    padding: 10px;
     text-align: left;
 }
 
