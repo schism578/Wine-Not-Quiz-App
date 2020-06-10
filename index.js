@@ -258,7 +258,7 @@ function generateQuestionPage() {
                 <fieldset>
                     <legend class="question">${question.text}</legend>
                         ${answers}
-                    <button type="submit">Submit</button> 
+                    <button type="submit" class="submit">Submit</button> 
                 </fieldset>   
             </form>
             `
@@ -266,9 +266,9 @@ function generateQuestionPage() {
 }
 
 function generateFeedbackPage(question, answer) {
-    const message = answer.isCorrect ? `<p class="feedback">You're right!</p>
+    const message = answer.isCorrect ? `<p class="feedback-text">You're right!</p>
                                         <img src="Quiz-App-Photos/Correct.jpeg" alt="wine glass cheers" class="correct">` 
-                                        : `<p class="feedback">Sorry, the answer is: ${question.answers.find(answer => answer.isCorrect).text}.</p> 
+                                        : `<p class="feedback-text">Sorry, the answer is: ${question.answers.find(answer => answer.isCorrect).text}.</p> 
                                         <img src="Quiz-App-Photos/Wrong.jpeg" alt="wine bottle smashed on head" class="wrong">`
     return `
         <ul class="scores-questions">

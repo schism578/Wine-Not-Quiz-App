@@ -20,7 +20,7 @@ body {
 .quiz-block {
     margin: auto;
     width: 80%;
-    height: 85vh;
+    height: 100%;
     padding: 1em;
     background-color: darkred;
     border: 2px lightgray solid;
@@ -43,7 +43,7 @@ body {
 
 .correct, .wrong {
     max-width: 40vw;
-    margin-bottom: 1em;
+    margin: 1.5em auto;
 }
 
 .finished, .perfect {
@@ -63,11 +63,11 @@ body {
 .quiz-form {
     width: 80%;
     height: 85%;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .feedback {
-    padding: 0.6em;
+    padding: 1.2em;
 }
 
 ol {
@@ -75,8 +75,17 @@ ol {
     flex-direction: column;
     justify-content: space-between;
     list-style-type: lower-alpha;
-    margin: auto;
+    margin: 10px auto;
     text-align: left;
+}
+
+.question {
+    padding-top: 7px;
+}
+
+ol > li {
+    max-width: 100%;
+    padding: 5px 0;
 }
 
 .end-message {
@@ -104,6 +113,14 @@ button {
     cursor: pointer;
     background-color: gray;
     color: black;
+}
+
+.submit {
+    margin: 20px auto;
+}
+
+.next-button {
+    margin: 1.1em auto;
 }
 
 button:hover,
