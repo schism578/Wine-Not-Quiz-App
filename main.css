@@ -60,10 +60,6 @@ body {
     font-size: 20px;
 }
 
-fieldset {
-    vertical-align: middle;
-}
-
 .quiz-form {
     width: 80%;
     height: 85%;
